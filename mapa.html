@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>ECOGuardian - Concientizaci&oacute;n sobre Incendios Forestales</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <div class="preloader"></div>
+ 	
+    <header class="main-header">
+    	<div class="main-box">
+        	<div class="auto-container">
+            	<div class="outer-container clearfix">
+                    <div class="logo-box">
+                        <div class="logo"><a href="index.html"><img src="images/logoeco.png" alt=""></a></div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="current"><a href="#">Mapa Interactivo</a></li>
+                                    <li><a href="prevencion.html">Prevenci&oacute;n</a></li>
+                                   	<li><a href="contact.html">Contactenos</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        
+                    </div>
+                    
+            	</div>    
+            </div>
+        </div>
+    
+    </header>
+    
+    <section class="page-title" style="background-image:url(images/background/5.jpg);">
+    	<div class="auto-container">
+        	<div class="inner-box">
+                <h1>MAPA INTERACTIVO</h1>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <div class="content-side blog-single col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                        <div id="map" style="width: 100%; height: 90vh; overflow-y: hidden"></div>
+                </div>
+                
+                <div class="sidebar-side col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <aside class="sidebar" style="padding: 0;">
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Referencia de colores</h2>
+                            </div>
+                            <div class="text" style="font-weight: bold;">Los puntos en mapa son suministrados por los sat&eacute;lites de la NASA e indican la probabilidad de que un foco se convierta en un incendio forestal.<br><br></div>
+                            <ul class="blog-cat">
+                                <li><img src="images/mapa/fire-station_red.png" alt="" style="max-width: 32px;"><span style="font-weight: bold;">Rojo</span><br>Probabilidad alta</li>
+                                <li><img src="images/mapa/fire-station_orange.png" alt="" style="max-width: 32px;"><span style="font-weight: bold;">Naranja</span><br>Probabilidad media<</li>
+                                <li><img src="images/mapa/fire-station_yellow.png" alt="" style="max-width: 32px;"><span style="font-weight: bold;">Amarillo</span><br>Probabilidad baja<</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+    	<div class="auto-container">
+        
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                
+                	<div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="row clearfix">
+						
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget logo-widget">
+                                	<div class="footer-logo"><figure><a href="index.html"><img src="images/logoeco-footer.png" alt=""></a></figure></div>
+                                    <div class="widget-content">
+                                    	<div class="text">ONG Ambientalista en Argentina dedicada a la conservación de la naturaleza y la protección de los recursos forestales.</div>
+									</div>
+                                </div>
+                            </div>
+                        
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget links-widget">
+                                	<h2>Sitios de Interes</h2>
+                                    <ul class="links">
+                                    	<li><a href="https://www.argentina.gob.ar/sinagir/incendio-forestal" target="_blank">SINAGIR</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/ambiente/manejo-del-fuego" target="_blank">Servicio Nacional de Manejo del Fuego</a></li>
+                                        <li><a href="https://www.argentina.gob.ar/ambiente" target="_blank">Ministerio de Ambiente y Desarrollo Sostenible</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                	<div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="row clearfix">
+						
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12"></div>
+                        
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget contact-widget">
+                                	<h2>Contactenos</h2>
+                                    <div class="contact-number"><span class="flaticon-technology-1"></span>&ensp;Celular <span class="number">(54) 9 1112345678</span></div>
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright">Copyright 2023 <span>ECOGuardian - Grupo 8</span> DISE&Ntilde;O Y DESARROLLO WEB.</div>
+                <a href="https://mtoschiuade.github.io/sitioequipo4/" target="_blank">Sitio grupal</a>
+            </div>
+        </div>
+        
+    </footer>
+    
+</div>
+
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+<script src="js/puntos-mapa.js"></script>
+
+<script>
+    let position = [-34.60355339707198, -58.3815811344386];
+    let map = L.map("map").setView(position, 5);
+
+    let markerLayerFocos = L.layerGroup();
+    let markerLayerClima = L.layerGroup();
+
+    let clima = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+        maxZoom: 18,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    let focos = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+            '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+    });
+
+
+    let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    let baseLayers = {
+        'Mapa Polico': focos,
+        'Mapa Fisico': clima,
+        'Mapa Satelital': googleSat
+    };
+
+    // Definir las capas adicionales para el control de capas
+    let overlays = {
+        'Focos': markerLayerFocos,
+    };
+
+    L.control.layers(baseLayers, overlays).addTo(map);
+
+    focos.addTo(map);
+    markerLayerFocos.addTo(map);
+
+    const fireIconRed = L.icon({
+        iconUrl: 'images/mapa/fire-station_red.png',
+        iconSize:     [40, 40], // size of the icon
+        iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    });
+
+    const fireIconYellow = L.icon({
+        iconUrl: 'images/mapa/fire-station_yellow.png',
+        iconSize:     [40, 40], // size of the icon
+        iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    });
+
+    const fireIconOrange = L.icon({
+        iconUrl: 'images/mapa/fire-station_orange.png',
+        iconSize:     [40, 40], // size of the icon
+        iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    });
+
+    for (let i = 0; i < locations.length; i++) {
+        let icono = (locations[i][3] === 2) ? fireIconOrange : fireIconOrange;
+        icono = (locations[i][3] === 1) ? fireIconYellow : icono;
+        icono = (locations[i][3] === 2) ? fireIconRed : icono;
+
+        L.marker([locations[i][1], locations[i][2]], {icon:icono})
+            .addTo(markerLayerFocos)
+            .bindPopup(
+                '<div class="">Latitud: '+locations[i][1]+' <br/ >Longitud: '+locations[i][2]+'<div class="">'
+            )
+            .openPopup();
+    }
+
+</script>
+</body>
+</html>
